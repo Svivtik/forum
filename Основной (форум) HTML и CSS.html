@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современный форум</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .message-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .message {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .message.sent {
+            align-self: flex-end;
+            background-color: #DCF8C6;
+        }
+        .message-input {
+            display: flex;
+            margin-top: 1rem;
+        }
+        .message-input input {
+            flex: 1;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+        }
+        .message-input button {
+            padding: 1rem;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать на наш форум!</h1>
+</header>
+
+<nav>
+    <a href="#">Главная</a>
+    <a href="#">Категории</a>
+    <a href="#">Вход</a>
+    <a href="#">Регистрация</a>
+    <a href="messages.html">Сообщения</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Последние обсуждения</h2>
+        <p>Тема 1: Какой лучший язык программирования?</p>
+        <p>Тема 2: Советы по здоровому образу жизни</p>
+        <p>Тема 3: Новые тенденции в искусстве</p>
+        <button class="button">Просмотреть все</button>
+    </div>
+    <div class="card">
+        <h2>Популярные темы</h2>
+        <p>Тема 1: Лучшие путешествия 2024 года</p>
+        <p>Тема 2: Технологии будущего</p>
+        <p>Тема 3: Как начать свой бизнес</p>
+        <button class="button">Присоединиться к обсуждению</button>
+    </div>
+</div>
+
+</body>
+</html>
